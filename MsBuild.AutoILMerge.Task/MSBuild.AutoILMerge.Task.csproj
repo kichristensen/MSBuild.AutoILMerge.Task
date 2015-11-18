@@ -7,8 +7,8 @@
     <ProjectGuid>{F30D8E26-CB79-4BAA-929E-7F56CEF161AE}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>MSBuild.ILMerge.Task</RootNamespace>
-    <AssemblyName>MSBuild.ILMerge.Task</AssemblyName>
+    <RootNamespace>MSBuild.AutoILMerge.Task</RootNamespace>
+    <AssemblyName>MSBuild.AutoILMerge.Task</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -29,7 +29,7 @@
     <WarningLevel>4</WarningLevel>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <UseVSHostingProcess>false</UseVSHostingProcess>
-    <DocumentationFile>bin\Debug\MSBuild.ILMerge.Task.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\MSBuild.AutoILMerge.Task.xml</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -41,7 +41,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <DebugSymbols>true</DebugSymbols>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <DocumentationFile>bin\Release\MSBuild.ILMerge.Task.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\MSBuild.AutoILMerge.Task.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.Build.Framework" />
@@ -54,37 +54,22 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="build\MSBuild.ILMerge.Task.props" />
-    <None Include="build\MSBuild.ILMerge.Task.targets">
+    <None Include="build\MSBuild.AutoILMerge.Task.props" />
+    <None Include="build\MSBuild.AutoILMerge.Task.targets">
       <SubType>Designer</SubType>
     </None>
     <None Include="content\ILMerge.props">
       <SubType>Designer</SubType>
     </None>
-    <None Include="MSBuild.ILMerge.Task.Symbols.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="MSBuild.ILMerge.Task.nuspec">
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="package.cmd" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\ILMergeOrder.txt" />
     <Content Include="Icon.png" />
-    <Content Include="License.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <PropertyGroup>
-    <PostBuildEvent>
-        "$(ProjectDir)..\.nuget\nuget.exe" pack "$(ProjectDir)MSBuild.ILMerge.Task.Symbols.nuspec" -Symbols -Properties "configuration=$(Configuration);" -Verbosity detailed -NonInteractive
-        "$(ProjectDir)..\.nuget\nuget.exe" pack "$(ProjectDir)MSBuild.ILMerge.Task.nuspec" -Properties "configuration=$(Configuration);" -Verbosity detailed -NonInteractive
-</PostBuildEvent>
-  </PropertyGroup>
-  <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
