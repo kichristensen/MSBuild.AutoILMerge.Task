@@ -1,0 +1,1 @@
+﻿..\.nuget\nuget.exe pack MSBuils.ILMerge.Task.nuspec -Properties "Configuration=$(Configuration)" NonInteractive -OutputDirectory "$(OutputPath)"</PvBuildCommand>
