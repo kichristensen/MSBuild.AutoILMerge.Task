@@ -28,7 +28,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="License.txt" target="" />
     <file src="build\MSBuild.AutoILMerge.Task.props" target="\build" />
     <file src="build\MSBuild.AutoILMerge.Task.targets" target="\build" />
     <file src="bin\release\MSBuild.AutoILMerge.Task.dll" target="\tools" />
