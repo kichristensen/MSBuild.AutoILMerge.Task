@@ -80,5 +80,5 @@
     <!-- copy content files marked as copy always or newest -->
     <Copy SourceFiles="@(LocalContentFiles)" DestinationFolder="$(OutputPath)" />
   </Target>
-  <UsingTask AssemblyFile="$(ILMergeToolsPath)MSBuild.ILMerge.Task.dll" TaskName="MSBuild.ILMerge.Task" />
+  <UsingTask AssemblyFile="$(ILMergeToolsPath)MSBuild.AutoILMerge.Task.dll" TaskName="MSBuild.AutoILMerge.Task" />
 </Project>
