@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MSBuild.AutoILMerge.Task</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>MSBuild Auto ILMerge Task</title>
     <authors>Kim Christensen</authors>
     <owners>Kim Christensen</owners>
