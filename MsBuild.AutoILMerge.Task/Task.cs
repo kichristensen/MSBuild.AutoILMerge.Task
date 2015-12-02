@@ -21,7 +21,7 @@ namespace MSBuild.ILMerge
     /// See http://sedodream.com/PermaLink,guid,020fd1af-fb17-4fc9-8336-877c157eb2b4.aspx
     /// why we don't really know the project directory so you better make sure all paths are absolute.
     /// </remarks>
-    public class Task : Microsoft.Build.Utilities.Task
+    public class MSBuild.AutoILMerge.Task : Microsoft.Build.Utilities.Task
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Task"/> class.
