@@ -76,6 +76,7 @@
         MergeOrderFile="$(ILMergeOrderFile)"
         DebugInfo="true" ShouldLog="true"
         Internalize="$(ILMergeInternalize)"
+        AllowDuplicateType="$(AllowDuplicateType)"
         InternalizeExcludeFile="$(ILMergeInternalizeExcludeFile)" />
     <!-- copy content files marked as copy always or newest -->
     <Copy SourceFiles="@(LocalContentFiles)" DestinationFolder="$(OutputPath)" />

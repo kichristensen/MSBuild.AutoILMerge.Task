@@ -30,5 +30,8 @@
    
     <!-- The file containing the list of type to exclude from internalization if different from ILMergeInternalizeExcludeList.txt (only relevant when "ILMergeInternalize" is true) -->
     <ILMergeInternalizeExcludeFile></ILMergeInternalizeExcludeFile>
+
+    <!-- Configures the /allowDup swith for ilmerge.exe. Use "*" or comma-separated type names -->
+    <AllowDuplicateType></AllowDuplicateType>
   </PropertyGroup>
 </Project>
