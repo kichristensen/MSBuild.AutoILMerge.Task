@@ -64,7 +64,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="content\ILMergeOrder.txt" />
-    <Content Include="Icon.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="tools\" />
