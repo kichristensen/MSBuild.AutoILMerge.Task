@@ -33,5 +33,6 @@
     <file src="bin\release\MSBuild.AutoILMerge.Task.dll" target="\tools" />
     <file src="content\ILMerge.props" target="\content" />
     <file src="content\ILMergeOrder.txt" target="\content" />
+    <file src="content\ILMergeInternalizeExcludeList.txt" target="\content" />
   </files>
 </package>
